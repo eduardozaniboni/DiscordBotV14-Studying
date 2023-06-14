@@ -1,9 +1,9 @@
-import { ExtendedClient } from "./structs/ExtendedClient"
-export * from "colors";
-import config from "./config.json"
+import { ExtendedClient } from './structs/ExtendedClient';
+export * from 'colors';
+import config from './config.json';
 
 const client = new ExtendedClient();
-client.start()
+client.start();
 
-export { client }
+export { client, config };
 

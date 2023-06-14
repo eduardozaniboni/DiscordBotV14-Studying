@@ -1,5 +1,5 @@
-import { ApplicationCommandData, ButtonInteraction, Collection, CommandInteraction, CommandInteractionOptionResolver, ModalSubmitInteraction, StringSelectMenuInteraction } from "discord.js"
-import { ExtendedClient } from "../ExtendedClient";
+import { ApplicationCommandData, ButtonInteraction, Collection, CommandInteraction, CommandInteractionOptionResolver, ModalSubmitInteraction, StringSelectMenuInteraction } from 'discord.js';
+import { ExtendedClient } from '../ExtendedClient';
 
 interface CommandProps {
   client: ExtendedClient,
@@ -22,8 +22,8 @@ export type CommandType = ApplicationCommandData & CommandComponents & {
 }
 
 export class Command {
-  constructor(options: CommandType) {
-    options.dmPermission = false
-    Object.assign(this, options)
-  }
+	constructor(options: CommandType) {
+		options.dmPermission = false;
+		Object.assign(this, options);
+	}
 }

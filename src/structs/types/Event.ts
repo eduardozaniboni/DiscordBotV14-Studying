@@ -1,4 +1,4 @@
-import { ClientEvents } from "discord.js";
+import { ClientEvents } from 'discord.js';
 
 export type EventType<Key extends keyof ClientEvents> = {
   name: Key;
@@ -7,7 +7,7 @@ export type EventType<Key extends keyof ClientEvents> = {
 }
 
 export class Event<Key extends keyof ClientEvents> {
-  constructor(options: EventType<Key>) {
-    Object.assign(this, options)
-  }
+	constructor(options: EventType<Key>) {
+		Object.assign(this, options);
+	}
 }
