@@ -8,6 +8,9 @@ export default new Command({
 	async run({ interaction }) {
 
 		await interaction.reply({ content: 'pong' });
-    
+		setTimeout(() => {
+			interaction.editReply({ content: 'pong x2' });
+		}, 6000);
+
 	},
 });
