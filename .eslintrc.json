@@ -19,7 +19,18 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            "tab",
+            {
+                "SwitchCase": 1,
+                "VariableDeclarator": "first",
+                "MemberExpression": 1,
+                "StaticBlock": {
+                    "body": 1
+                },
+                "ArrayExpression": 1,
+                "ObjectExpression": 1,
+                "ImportDeclaration": 1
+            }
         ],
         "linebreak-style": [
             "error",
